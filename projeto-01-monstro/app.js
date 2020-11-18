@@ -44,7 +44,7 @@ new Vue({
             return Math.round(value)
         },
         registerLog(text, cls) {
-            this.logs.unshift({ text, cls })
+            this.logs.unshift({ text, cls }) // unshit para colocar na primeira posição
         }
     },
     watch: {
