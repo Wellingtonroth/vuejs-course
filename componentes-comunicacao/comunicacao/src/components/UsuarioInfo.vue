@@ -8,7 +8,14 @@
 
 <script>
 export default {
-    props: ['nome'],
+    props: {
+        nome: {
+            type: String,
+            required: true
+            //default: "arrroz"
+        }
+        // nome: [String, Array] pode passar opções
+    },
     methods: {
         inverterNome() {
             return this.nome.split('').reverse().join('')
