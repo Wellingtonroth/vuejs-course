@@ -4,6 +4,7 @@
         <p>Vários detalhes...</p>
         <p>Nome do usuário: <strong>{{ inverterNome() }}</strong></p>
         <button @click="reiniciarNome">Reiniciar Nome</button>
+        <button @click="reiniciarFn">Reiniciar Nome (Callback)</button>
     </div>
 </template>
 
@@ -17,8 +18,9 @@ export default {
             //     return Array(10).fill(0).join(',')
             // }
             default: "arrroz"
-        }
+        },
         // nome: [String, Array] pode passar opções
+        reiniciarFn: Function
     },
     methods: {
         inverterNome() {
