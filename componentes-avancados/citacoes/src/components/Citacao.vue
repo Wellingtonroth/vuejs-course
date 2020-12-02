@@ -1,6 +1,8 @@
 <template>
     <div class="citacao">
-        {{ texto }}
+        <slot>
+            
+        </slot>
     </div>
 </template>
 
