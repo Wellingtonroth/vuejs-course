@@ -4,12 +4,8 @@
             <button @click="numero--">&lt;</button>
             <button @click="numero++">&gt;</button>
         </span>
-        <!-- <Citacao :texto="citacoes[indice].texto" /> -->
-
         <Citacao>
-            <h1 slot="autor">Autor:</h1>
             <h1 slot="autor">{{ citacoes[indice].autor }}</h1>
-            <p>Citação</p>
             <p>{{ citacoes[indice].texto }}</p>
             <h6 slot="fonte">{{ citacoes[indice].fonte }}</h6>
         </Citacao>
@@ -43,8 +39,19 @@ export default {
         indice() {
             return Math.abs(this.numero % 3)
         }
+    },
+    created() {
+        console.log('created')
+    },
+    destroyed() {
+        console.log('destroyed')
+    },
+    activated() {
+        console.log('activated')
+    },
+    deactivated() {
+        console.log('deactivated')
     }
-
 }
 </script>
 
