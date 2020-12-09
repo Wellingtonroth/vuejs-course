@@ -16,6 +16,7 @@
 </template>
 
 <script>
+
 import Vermelho from './components/Vermelho.vue'
 import Verde from './components/Verde.vue'
 import Azul from './components/Azul.vue'
